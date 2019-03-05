@@ -1,7 +1,7 @@
 # Chapter 10: A Variety of Economic Mechanisms
 
 # Stable Coins
-
+Example citation [1]
 ## Federal Reserve
 //TODO
 
@@ -41,4 +41,8 @@ How does traditional DNS work?
 # Namecoin
 # ENS
 # Handshake
+
+--------
+
+[1] Memon, Bilal. ["Guide to Stablecoin: Types of Stablecoins & Its Importance"](https://masterthecrypto.com/guide-to-stablecoin-types-of-stablecoins/). Retrieved 22 Oct 2018.
 
