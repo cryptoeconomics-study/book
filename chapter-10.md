@@ -114,8 +114,12 @@ How does traditional DNS work?
 --------
 
 [1] Memon, Bilal. ["Guide to Stablecoin: Types of Stablecoins & Its Importance"](https://masterthecrypto.com/guide-to-stablecoin-types-of-stablecoins/). Retrieved 22 Oct 2018.
+
 [2] Blockchain.com ["The State of Stablecoins 2018"](https://www.blockchain.com/ru/static/pdf/StablecoinsReportFinal.pdf). Retrieved 24 Jan 2019.
+
 [3] Qureshi, Haseeb. ["Stablecoins: designing a price-stable cryptocurrency"] (https://hackernoon.com/stablecoins-designing-a-price-stable-cryptocurrency-6bf24e2689e5). Retrieved Feb 20 2018.
+
 [4] Samman, George. ["The State of Stablecoins 2019
 Hype vs. Reality in the Race for Stable, Global, Digital Money"](https://static1.squarespace.com/static/564100e0e4b08c9445a5fc5d/t/5c71e43ef9619ae6c83c30af/1550967911994/The+State+of+Stablecoins+2019_Report+2_20_19.pdf). Retrieved Mar 12 2019.
 
+[5] Kade, Stephen. ["TrueUSD: A Stablecoin that you can redeem 1-for-1 for US Dollars"](https://blog.trusttoken.com/trueusd-a-usd-backed-stablecoin-you-can-trust-9688796cfd0d)
