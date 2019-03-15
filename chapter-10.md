@@ -78,11 +78,40 @@ CDPs are collateralized smart contracts that allow users to generate Dai in prop
 
 ## Seigniorage (Non-Collateralized/Algorithmic) Stablecoins
 
-#### Basis 
-//TODO
+Historically, the term **seigniorage** refers to the profits that central banks and governments receive by minting new money. The Seigniorage Shares scheme was pioneered by Robert Sams in 2014 in a design proposal for **non-collateralized** stablecoins. Instead of holding fiat in reserve or have other cryptocurrencies back the coin, the scheme relies purely on smart contract(s) to ensure a stable trading price by running algorithms that autonomously control the coin supply. In other words, the smart contract acts as an "algorithmic central bank" whose only mandate is to issue a currency that trades at a stable price -- say $1.
 
-- What was the Basis Protocol?
-- Why did it fail?
+In this scheme, smart contracts control the inflation/deflation of the stablecoin through a **shares-for-coins** and **coins-for-shares** mechanism. The *shares* represent a claim on the future value of coins to fulfill demand while the *coins* themselves act as a price-stable medium of exchange. Let's explore some scenarios:
+
+**Stablecoin price is higher than intended peg**
+If the stablecoin trades too high (i.e. supply is too low), the smart contract mints and auctions off new coins in exchange for shares. The inflation increases money supply, bringing down the price of the coin and decreases the number of shares, thus increasing the value of the shares. Issuing shares results in excess coins being distributed, leaving the smart contract with some extra profits (seignourage). 
+
+**Stablecoin price is lower than intended peg**
+If the coin is trading too low (i.e. supply is too high), the smart contract buys up coins on the market and deflates the circulating supply. 
+However, if the smart contract's seignourage is insufficient to buy up enough coins, it can issue shares that entitle the buyer to *future* seignorage. This means that the next time it issues new coins and earns seignorage, shareholders will be entitled to a share of those profits. This predicates on the assumption that demand for the coin will increase in the future. Share buyers are expecting future seignourage in return for the coins they sell for shares now. Those who sell their stablecoins for shares enable the coin supply to decrease, restablizing the price to $1. The shares they hold now act as claims on future coin distribution as demand for the coin increases.
+
+Pros:
++ No need for additional assets to back additional coin issuance
++ Most decentralized, digitally native and independent of fiat or any other cryptocurrency
++ Stronger network adoption incentive due to the (perceived) potentialto earn profits on the creation of stablecoins
+
+Many existing coins offer some form of incentive mechanism or dividend built into its design (e.g. seigniorage shares, voting rights, transaction fee dividends).
+
+Cons:
+- Most complex to design and audit
+- Unproven monetary policy. Since there is no collateral to liquidate the coin back to there are dire consequences if the algorithms aren't well-designed (e.g. a crash to zero)
+- Increased risk factor as users are giving up stablecoins of certain value in the present for uncertain value in the future. If the currency is not adopted, the price will not rise enough to generate enough stablecoins to pay out to shareholders
+- Since increased demand is needed to drive up the coin price such that an increase in the money supply is required, the coin will not be able to maintain its peg if the network doesn't continue growing
+- Low coin prices are handled by *promises of future growth*, which must be subsidized by buying into the scheme
+
+Because trust-creation is important in initial phases of a project (over decentralization), some stablecoin projects have started with an asset-backed token, with plans to eventually move to an algorithmic scheme. Here are some examples of algorithmic stablecoins:
+
+#### Carbon
+
+#### Basis 
+
+// TODO
+- What is Basis
+- As of December 13, 2018, Basis has decided to shut down. Why did it fail?
 
 ## Other Stable Coin Mechanisms
 //TODO
@@ -123,3 +152,5 @@ How does traditional DNS work?
 Hype vs. Reality in the Race for Stable, Global, Digital Money"](https://static1.squarespace.com/static/564100e0e4b08c9445a5fc5d/t/5c71e43ef9619ae6c83c30af/1550967911994/The+State+of+Stablecoins+2019_Report+2_20_19.pdf). Retrieved Mar 12 2019.
 
 [5] Kade, Stephen. ["TrueUSD: A Stablecoin that you can redeem 1-for-1 for US Dollars"](https://blog.trusttoken.com/trueusd-a-usd-backed-stablecoin-you-can-trust-9688796cfd0d)
+
+[6] Sams, Robert. ["A Note on Cryptocurrency Stabilisation: Seignourage Shares"](https://assets.ctfassets.net/sdlntm3tthp6/resource-asset-r390/5a940afb21681d19c0b3b76cf69259e1/58ebe9e2-1f28-4a8d-8ce1-26abef07aedf.pdf)
