@@ -1,6 +1,6 @@
 # 📙 Book
 
-This is the book section which will have a full copy of the book Cryptoeconomics: An Introduction. Book development is led by [Jinglan Wang](https://twitter.com/jinglanW).
+This is the book section which will have a full copy of the book Cryptoeconomics: An Introduction. Book development is led by [Jinglan Wang](https://twitter.com/jinglanW). The book will have examples, explanations of how different mechanisms work (or didn't work and failed), a bit of history, and a complete overview of the fundamentals of Cryptoeconomics.
 
 Want to contribute? See: [Contribution guidelines](CONTRIBUTING.md).
 
