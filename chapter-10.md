@@ -12,15 +12,12 @@ In this chapter we will focus on the mechanisms in which stablecoins are created
 
 ## Tradeoffs: The Stablecoin Trilemma
 
-All projects in the Stablecoin space have been forced to choose two of these three characteristics to build
+All projects in the Stablecoin space are ultimately compelled to choose two of these three characteristics to build
 out their vision. Stablecoins suffer from their own trilemma where you can only have two out of the three desired states:
 
-* Decentralization
--- How open the network is, no central authority, the variability of validators and distribution of confirmation power)
-* Capital Efficiency
--- The stablecoin is backed with 100% collateral or less) and
-* Collateralization
--- Occurs when a borrower pledges an asset as recourse to the lender in the event that the borrower defaults on the initial loan
+* **Decentralization**: how open the network is, no central authority, the variability of validators and distribution of confirmation power
+* **Capital Efficiency**: the stablecoin is backed with 100% collateral or less
+* **Collateralization**: when a borrower pledges an asset as recourse to the lender in the event that the borrower defaults on the initial loan
   
 ## Fiat-collateralized Stablecoins
 
@@ -34,6 +31,7 @@ Pros:
 + Simplest, easy-to-understand mechanics
 + Most robust in terms of price stability
 + Least vulnerable to software failure as collaterals are held off-chain
++ Moderately capital efficient, does not require overcollateralization
 
 Cons:
 - Centralized, single point of failure — need a trusted custodian to store the fiat
@@ -160,20 +158,19 @@ A hypothetical scenario under an **contraction** event (Basis trades above $1)
 * The system will fill the winning bids at the clearing price: The first user will receive 80 bonds in exchange for 80 * 0.6 = 48 coins, and the second user will receive 20 bonds in exchange for 20 * 0.6 = 12 coins.
 
 ##### Regulations & The Fate of Basis
-As of December 13 2018, Basis decided to shut down, citing primarily regulatory restrictions as impediments to its launch and network adoption. As regulatory guidances for cryptocurrencies came out, it became more apparent that Basis' bond and share tokens would have been characterized as securities. This would have subjected these tokens would to transfer restrictions, with the company being responsible for limiting token ownership to accredited investors in the US for the first year after issuance and for performing eligibility checks on international users.
-These transfer restrictions would have significantly compromised censorship resistance and on-chain liquidty as it would have required the company to maintain a centralized whitelist of users. The whitelist would be required indefinitely as Basis' monetary policy involves continual issuance and redemption of bond and share tokens. 
-Since the system's stability relies on its ability to auction off bond tokens in open markets, transfer restrictions would have significantly impaired this core mechanic.
+*As of December 13 2018, Basis decided to shut down, citing primarily regulatory restrictions as impediments to its launch and network adoption. As regulatory guidances for cryptocurrencies came out, it became more apparent that Basis' bond and share tokens would have been characterized as securities. This would have subjected these tokens would to transfer restrictions, with the company being responsible for limiting token ownership to accredited investors in the US for the first year after issuance and for performing eligibility checks on international users. These transfer restrictions would have significantly compromised censorship resistance and on-chain liquidty as it would have required the company to maintain a centralized whitelist of users. The whitelist would be required indefinitely as Basis' monetary policy involves continual issuance and redemption of bond and share tokens.  Since the system's stability relies on its ability to auction off bond tokens in open markets, transfer restrictions would have significantly impaired this core mechanic.*
 
 Despite the disappointing outcome, Basis return capital to investors after being unable to find a compelling enough workaround to comply with regulations.
 
 #### Carbon
 Carbon is another example of a stablecoin designed under a decentralized seigniorage shares scheme. It is one of the first cryptocurrencies to build on Hedera Hashgraph. It utilizes a dual-token model which consists of:
-1. Carbon stablecoin and 
-2. Carbon Credit token (“Carbon Credit”)
+1. **Carbon stablecoin** and 
+2. **Carbon Credit token** (“Carbon Credit”)
 
 When Carbon is trading under its $1 peg, Carbon Credits are auctioned off to market participants who are willing to burn their Carbon stablecoins. Carbon Credit holders are later rewarded when demand for Carbon stablecoins increase in the future, and the stablecoin trades above the $1 peg. When the price of Carbon stablecoin is above $1, the smart contract mints new stablecoins and distributes them to Carbon Credit holders on a pro-rata basis. This theoreticlaly will create downward pressure and push the price of the stablecoin back to its $1 peg.
 
-Price Oracle
+**Price Oracle**
+
 Every 24 hours, nodes submit bids for what they believe is the correct exchange rate for Carbon. Anyone who bids outside the 25th and 75th percentiles will have their balances deducted and given to the bidders whose bids fall within the 25-75th percentile. This may seem controversial and deter participation because it means that, evne if a node reports a price even *marginally* outside the 25-75th percentile, their balance would be deducted.
 
 Unlike other Seignourage shares stablecoins, Carbon it allows users to freeze portions of their funds to manage contraction and expansion cycles. The Carbon system gives 100% of the upside to users who helped the system to contract through burning their tokens.
